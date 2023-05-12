@@ -4,14 +4,22 @@
     width: 100vw;
     position: fixed;
     background: rgba(57, 55, 72, 0.22);
-    right: -31px;
+    right: -3px;
     z-index: -1;
     /* left: -131px; */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 992px) {
     .dropdown-menu.cart::before {
     right: 0;
+    height: 96vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dropdown-menu.cart {
+    width: 100vw;
+    right: -7vw;
     }
 }
 
